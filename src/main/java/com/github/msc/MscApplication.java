@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@EnableCircuitBreaker
 //@EnableDiscoveryClient
 @SpringBootApplication
-//@EnableFeignClients
+
 public class MscApplication {
 
     public static void main(String[] args) {

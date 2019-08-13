@@ -7,7 +7,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
 public class User {
-    @NotEmpty(message="姓名不能为空")
+    @javax.validation.constraints.NotEmpty(message="姓名不能为空")
     private String name;
     @Max(value = 100, message = "年龄不能大于100岁")
     @Min(value= 18 ,message= "必须年满18岁！" )
@@ -16,6 +16,7 @@ public class User {
     @Length(min=6,message="密码长度不能小于6位")
     private String pass;
 
+    private User u;
     public String getName() {
         return name;
     }
